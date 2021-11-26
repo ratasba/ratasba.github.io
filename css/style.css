@@ -1,0 +1,277 @@
+*{
+    padding: 0px;
+    margin: 0px;    
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    background-image: url("../imagens/bg_desktop.jpg");
+    background-repeat:repeat-x; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 5%;
+    border-radius: 10px;
+
+    
+}
+#topo{
+    background-color:rgba(255,255,255,0.8);
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 10px;
+    
+}
+#principal{
+    margin: 0 auto;
+}
+#topo img{
+    width: 110px;
+    height:auto;
+}
+ul{
+    list-style-type: none;
+}
+.menu{
+    display:block;
+    background-color:rgba(255,255,255,0.7) ;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #04417e;
+    
+}
+.menu:hover{
+    transition: 0.9s;
+    background-color: #0170c1;
+    color: white;
+    
+}
+article{
+    background-color: #4394bc;
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;    
+}
+
+header h1{
+    text-align: center;
+    color: #fff;
+    font-size: medium;
+}
+article header{
+    margin-bottom: 10px;
+}
+article img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+article p {
+    color: #fff;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+aside{
+    background-color: rgba(2, 48, 117,  0.7);
+    border-radius:5px;
+    padding:20px;
+    margin-top: 10px;
+    display:flex;
+    
+   
+}
+aside div{
+    text-align: center;
+}
+aside div img{
+    width: 100%;
+    border-radius: 5px;
+    height:auto;
+    
+}
+
+a:link{
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(1, 39, 255);
+    transition: 0.9s;
+    text-decoration: underline none;
+    
+}
+
+a:active{
+    color: rgb(255, 255, 255);
+    text-decoration: underline none;
+}    
+a{
+    
+    text-decoration: none;
+}
+
+#importado{
+    margin-right: 20px;
+}
+footer div{
+    background: color #00407d;
+    border-radius: 5px;
+    margin-top:10px;
+    text-align: center;
+    padding: 10px;
+}
+footer div a{
+    text-decoration: none;
+    color:white;
+    background-color: #00407d;
+    padding: 5px 50px;
+    border-radius:10px;
+}
+footer div a:hover{
+    background-color:#00407d;
+}
+footer div h2{
+    color: white;
+    font-size: small;
+    margin-top:10px;
+}
+span{
+    color:rgb(255, 255, 255);
+    font-size:smaller;
+    text-align: center; 
+}
+#principal header nav{
+    display:none;
+}
+
+    /*Veiculos*/
+    
+.fotos{
+    background-color: rgba(2, 48, 117,  0.7);
+    border-radius:5px;
+    padding:20px;
+    margin-top: 10px;
+    
+}
+.fotos h1{
+    color:#fff;
+    text-align: center;
+    font-size:medium;
+}
+.linha{
+    display: flex;
+    margin-top: 10px;
+}
+.linha div img{
+    width:100%;
+    height:auto;
+    border-radius: 5px;
+}
+.esquerda{
+    margin-top: 10px;
+}
+.direita{
+    margin: 10px;
+}
+/* codigo abaixo não serve, pois não tem p den
+.linha div p{
+    color: #fff;
+}*/
+
+.linha div a p{
+    text-align: center;
+}
+
+/*------------contato------------*/
+
+footer p{
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+}
+input, textarea{
+    background-color: #006fbb;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 4px;
+    outline: none;
+    resize: none;
+    
+}
+
+
+
+/*--------------DESKTOP------------*/
+
+
+
+@media(min-width:768px){
+
+    #topo img{
+        width:164px;
+        height:auto;
+    }
+    #principal nav{
+        display:none;
+    }
+
+    #principal #topo{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+
+    }
+    #principal header nav{
+        display:block;
+    }
+    #principal header nav ul {
+        display:flex;
+        
+    
+    }
+    .menu{
+        
+        margin-left: 30px;
+        background-color:rgba(0, 4, 255, 0);
+        font-size: larger;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .menu:hover{
+        background-color: #00407d;
+    }
+    article img{
+        width: 50%;
+    }
+    article>div{
+        display: flex;align-items: flex-start;        
+    }
+    article div p{
+        margin-left: 30px;
+    }
+    #principal{
+        max-width: 960px;
+    }
+
+        
+}
+    
+
+
+        
+
+        
+
+
